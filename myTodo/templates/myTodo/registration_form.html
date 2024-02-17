@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find out</title>
+    <link rel="stylesheet" href="/static/registration_form.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <section id="form">
+        <div class="leftSide">
+            <!-- <img src="image/pic-1.jpg" alt=""> -->
+        </div>
+        <div class="rightSide">
+            <form action="" method="POST">
+                <h4>Registration form</h4>
+                {% csrf_token %}
+                <div class="input inputName">
+                    <label for="Name">{{ form.username.label }}:</label>
+                    {{form.username}}
+                </div>
+
+                <div class="input inputEmail">
+                    <label for="email">{{ form.email.label }}</label>
+                    <!-- <input type="email" placeholder="Your e-mail here" id="email" name="{{ form.email }}"> -->
+
+                    {{ form.email }}
+                </div>
+                
+                <div class="input inputPassword">
+                    <label for="password">{{ form.password1.label }}</label>
+                    
+                    {{form.password1}}
+                </div>
+                
+                <div class="input inputConfirmPassword">
+                    <label for="cpassword">{{ form.password2.label }}</label>
+                    
+                    {{form.password2}}
+                </div>
+                
+                <div class="inputradio">
+                    <input type="checkbox" id="radio">
+                    <label for="radio">By signing up, you agree to the <a href="">Terms and Condition</a></label>
+                    
+                </div>            
+    
+                <!-- <input class="button" type="submit" type="sumbit" style="margin-top:10px ;"> -->
+
+                <div class="inputbtn">
+                    <button><span></span>Register</button>
+                    <i class="fa fa-brands fa-facebook"></i>
+                    <i class="fa fa-brands fa-square-instagram"></i>
+                    <i class="fa fa-brands fa-twitter"></i>
+                </div>
+
+                
+
+            </form>
+
+            <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+                
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find out</title>
+    <link rel="stylesheet" href="/static/registration_form.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <section id="form1">
+        
+        <div class="rightSide border-1 rounded-5" style="width: 100%;">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <h4>Login form</h4>
+                <div class="input inputName">
+                    <label for="Name">{{ form.username.label }}:</label>
+                    <!-- <input type="text" placeholder="Enter your name" id="Name" name="{{ form.username }} "> -->
+                    {{ form.username }}
+                </div>
+                
+                <div class="input inputPassword">
+                    <label for="password">{{form.password.label}}:</label>
+                    <!-- <input type="password" placeholder="Create your password" id="password" name="{{ form.password }}"> -->
+                    {{ form.password }}
+                </div>
+                
+                <div class="inputbtn">
+                    <!-- <input class="btn detele-mainBtn" type="submit" value="Login" > -->
+                    <button><span></span>Login with</button>
+                    <i class="fa fa-brands fa-facebook"></i>
+                    <i class="fa fa-brands fa-square-instagram"></i>
+                    <i class="fa fa-brands fa-twitter"></i>
+                </div>
+
+                <p>Don't have an account? <a href="{% url 'register' %}">Register</a></p>
+               
+            </form>
+        </div>
+    </section>
+</body>
+</html>

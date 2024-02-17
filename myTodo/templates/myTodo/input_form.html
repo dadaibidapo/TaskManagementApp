@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SP Lab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+
+  <body>
+    <div id="preloader">
+        <div class="spinner-grow" style="width: 7rem; height: 7rem;"  role="status">
+        <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark border-bottom pb-3 position-sticky" style="background-color: #009587" >
+        <div class="container">
+            <a href="#" class="navbar-brand fs-1 fw-3 text-uppercase">TODO APP</a>
+               
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                
+                    <li class="me-3">
+                        <a href=""><img src="/static/image/dman450.jpg" alt="" class="img-height rounded-circle border-3 border-secondary " ></a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <!-- <a href="#" class="nav-link">Question</a> -->
+                        <h4 class="nav-list mt-1">Welcome Admin</h4>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link">Logout</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =========================================================== -->
+    <section class="text-center text-sm-start mt-1">
+        <div class="container-fluid">
+            <div class="row" style="height: 80vh;">
+                <div class="col-2 d-none d-md-block position-sticky bgs" style="background-color:#F3F4F5; width: 30%;">
+                    <div>
+                    <ul class="mt-3 fw-medium" style="width: 100%; font-size: 14px;">
+                        <li class="side-list">
+                            <a href="#" class="py-3  rounded-2 w-100 mb-2 side-links"> <i class="fa fa-inbox me-2" style="color: rgb(133, 133, 241);" aria-hidden="true"></i>Inbox</a>
+                        </li>
+                        <li class="side-list">
+                            <a href="#" class="py-3  rounded-2 w-100 mb-2 side-links"><i class="bi bi-calendar2-event me-2" style="color: rgb(97, 224, 97);"></i>Today</a>
+                        </li>
+                        <li class="side-list">
+                            <a href="#" class="py-3  rounded-2 w-100 mb-2 side-links"><i class="bi bi-calendar3 me-2" style="color: rgb(153, 80, 221);"></i>Upcoming</a>
+                        </li>
+                        <li class="side-list">
+                            <a href="#" class="py-3  rounded-2 w-100 mb-2 side-links"><i class="fa fa-tty me-2" style="color: orange;" aria-hidden="true"></i>Filters & Labels</a>
+                        </li>
+                    </ul>
+                    </div>
+
+
+                    <div class="mt-3">
+                        <ul class="fw-medium" style="width: 100%; font-size: 14px;">
+                            
+                            <p>Workspaces</p>
+                            
+                            <li class="side-list">
+                                <a href="#" class="py-3 w-100 mb-2 side-links"><i class="bi bi-file-person me-2" style="color: rgb(242, 118, 72);"></i>Personal</a>
+                            </li>
+                            <li class="side-list">
+                                <a href="#" class="py-3  rounded-2 w-100 mb-2 side-links"> <i class="bi bi-circle-fill me-2" style="color: orangered;"></i>Fitness</a>
+                            </li>
+                            <li class="side-list">
+                                <a href="#" class="py-3  rounded-2 w-100 mb-2 side-links"><i class="bi bi-person me-2" style="color:orange;"></i>Groceries</a>
+                            </li>
+                            <li class="side-list">
+                                <a href="#" class="py-3  rounded-2 w-100 mb-2 side-links"><i class="bi bi-circle-fill me-2" style="color: blue;"></i>Appointments</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    
+                    
+                        <div class="mt-3">
+                            <ul class="fw-medium" style="width: 100%; font-size: 14px;">
+                                
+                                <p>Workspaces</p>
+                                
+                                <li class="side-list">
+                                    <a href="#" class="py-3 w-100 mb-2 side-links"><i class="bi bi-file-person me-2" style="color: rgb(242, 118, 72);"></i>Personal</a>
+                                </li>
+                                <li class="side-list">
+                                    <a href="#" class="py-3  rounded-2 w-100 mb-2 side-links"> <i class="bi bi-circle-fill me-2" style="color: orangered;"></i>Fitness</a>
+                                </li>
+                                <li class="side-list">
+                                    <a href="#" class="py-3  rounded-2 w-100 mb-2 side-links"><i class="bi bi-person me-2" style="color:orange;"></i>Groceries</a>
+                                </li>
+                                <li class="side-list">
+                                    <a href="#" class="py-3  rounded-2 w-100 mb-2 side-links"><i class="bi bi-circle-fill me-2" style="color: blue;"></i>Appointments</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                </div>
+
+
+                 <!-- TODO LIST -->
+                <div class="col-12 col-md-8 mt-2 mx-3" style="height: 100%; color: black; box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                    <div class="mb-3 mt-3">
+                        <label for="exampleFormControlInput1" class="form-label">{{form.title.label}}</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="{{form.title.name}}" value="{% if form.title.value %}{{ form.title.value }}{% else %}{% endif %}">
+                        <!-- {{form.title}} -->
+                        <!-- {% if form.title.value %}{{ form.title.value }}{% else %}{% endif %} -->
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">{{form.description.label}}</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="{{form.description.name}}">{% if form.description.value %}{{form.description.value}}{%else%}{% endif %}</textarea>
+                        <!-- {{form.description}} -->
+                        
+                      </div>                                      
+
+                      
+                        <div class="mb-3 flex flex-row">
+                            <label for="calendarField" class="form-label">{{ form.date_complete.label }}</label>
+                            
+                            <input type="date" id="calendar" name="{{ form.date_complete.name }}" class="calendar-input" id="calendarField" value="{{ form.instance.date_complete|date:'Y-m-d' }}">
+                            <!-- {{form.date_complete}} -->
+                        </div>
+
+                      <div class="mb-3">
+                        <label for="Formcheckbox1" class="form-label">{{form.complete.label}}</label>
+                        <input type="checkbox" class="" id="Formcheckbox1" name="{{form.complete.name}}" value="{{form.complete.value}}">
+                        <!-- {{form.complete}} -->
+                      </div>
+                      
+                      <input class="btn detele-mainBtn" type="submit" value="Submit" >
+                    </form>
+                </div>
+
+
+
+                
+            </div>        
+                
+        </div>
+                    
+    </section>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>
